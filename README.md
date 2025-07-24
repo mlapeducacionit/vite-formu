@@ -34,4 +34,26 @@ npm run preview
 git init
 ```
 
+```sh
+git add .
+```
+
+```sh
+git commit -m <mensaje>
+git commit -m "Subiendo el proyecto netlify"
+```
+
+## Agrego el remoto al repo local
+
+```sh
+git remote add origin https://github.com/mlapeducacionit/vite-formu.git
+```
+
+## Subo la rama local al remoto
+
+```sh
+git push -u origin main
+# Si no hacen este comando -> git branch -M main
+git push -u origin master 
+```
 
