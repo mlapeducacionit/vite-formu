@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios (validaciones)</title>
+  </head>
+  <body>
+
+    <div class="container mx-auto">
+    
+      <h1 class="text-5xl text-red-700">Formularios (validaciones)</h1>
+      <hr>
+
+      <a id="link-google" href="https://google.com">Google</a>
+
+      <hr>
+
+      <h2>Formulario toma datos</h2>
+      <!-- Query String -->
+      <!-- Method -> VERBO GET (Por default) -> Arma la Query String en la URL -->
+      <!-- Method -> VERBO POST -> Arma la Query String y la envia en segundo plano, a través del cuerpo (body) del documento HTML -->
+      <!-- dominio.com/formulario-contacto?nombre=Maxi&apellido=Principe&edad=22&correo=max%40gmail.com&password=123456 -->
+
+      <form id="data-form" action="" method="POST" class="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-2xl p-6 space-y-4">
+
+        <div>
+          <label for="lbl-nombre" class="block text-sm font-medium text-gray-700">Nombre</label>
+          <input name="nombre" type="text" id="lbl-nombre" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+
+        <div>
+          <label for="lbl-apellido" class="block text-sm font-medium text-gray-700">Apellido</label>
+          <input name="apellido" type="text" id="lbl-apellido" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+
+        <div>
+          <label for="lbl-edad" class="block text-sm font-medium text-gray-700">Edad</label>
+          <input name="edad" type="text" id="lbl-edad" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+
+        <div>
+          <label for="lbl-correo" class="block text-sm font-medium text-gray-700">Correo</label>
+          <input name="correo" type="text" id="lbl-correo" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+
+        <div>
+          <label for="lbl-password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+          <input name="password" type="text" id="lbl-password" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full cursor-pointer bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300"
+        >
+          Enviar
+        </button>
+
+      </form>
+    </div>
+    
+
+
+  
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
